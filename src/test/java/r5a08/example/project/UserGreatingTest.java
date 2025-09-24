@@ -21,7 +21,7 @@ public class UserGreatingTest {
     public void when_input_is_more_than_10_character(){
 
         //act assert
-        Exception exception = Assertions.assertThrows(UserGreatingFailureException.class,()-> {
+        Assertions.assertThrows(UserGreatingFailureException.class,()-> {
             UserGreating.formatGreating("abcdefghijklmnopqres");
         });
     }
