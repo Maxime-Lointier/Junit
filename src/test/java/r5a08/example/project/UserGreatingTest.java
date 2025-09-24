@@ -29,7 +29,7 @@ public class UserGreatingTest {
     public void when_input_is_empty(){
 
         //act assert
-        Exception exception = Assertions.assertThrows(UserGreatingFailureException.class,()-> {
+         Assertions.assertThrows(UserGreatingFailureException.class,()-> {
             UserGreating.formatGreating("");
         });
     }
@@ -37,7 +37,7 @@ public class UserGreatingTest {
     public void when_input_is_special_character(){
 
         //act assert
-        Exception exception = Assertions.assertThrows(UserGreatingFailureException.class,()-> {
+         Assertions.assertThrows(UserGreatingFailureException.class,()-> {
             UserGreating.formatGreating("/");
         });
     }
